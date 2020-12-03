@@ -1,0 +1,25 @@
+{
+    "id": "DA6CC891",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1607008439771.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "id": "127970cd648f488591aa5cfb38b8185c",
+        "name": "trip_info",
+        "title": "trip_info"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1607008096,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607008439771,
+    "read_only": false,
+    "read_only_alternatives": []
+}

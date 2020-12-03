@@ -1,0 +1,25 @@
+{
+    "id": "CC10978F",
+    "path": null,
+    "project_path": null,
+    "type": "object_explorer",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1607008054778.0,
+    "source_on_save": false,
+    "relative_order": 2,
+    "properties": {
+        "id": "924a9b798e62444b8dc6869eb40f6ec6",
+        "name": "result",
+        "title": "result"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1607008034,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607008054778,
+    "read_only": false,
+    "read_only_alternatives": []
+}

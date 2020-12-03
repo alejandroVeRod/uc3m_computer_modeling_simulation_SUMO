@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on Tue Dec  1 00:54:17 2020 by Eclipse SUMO netconvert Version 1.7.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <node-files value="conf/../data/cruce.nod.xml"/>
+        <edge-files value="conf/../data/cruce.edg.xml"/>
+        <connection-files value="conf/../data/cruce.con.xml"/>
+        <type-files value="conf/../data/cruce.typ.xml"/>
+    </input>
+
+    <output>
+        <output-file value="conf/../generated/cruce.net.xml"/>
+    </output>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+    </junctions>
+
+    <report>
+        <xml-validation value="never"/>
+        <aggregate-warnings value="5"/>
+    </report>
+
+</configuration>
+-->
+
+<net version="1.6" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="500.00,500.00" convBoundary="0.00,0.00,1000.00,1000.00" origBoundary="-500.00,-500.00,500.00,500.00" projParameter="!"/>
+
+    <type id="residencial" priority="1" numLanes="1" speed="8.33"/>
+    <type id="urbana" priority="1" numLanes="1" speed="13.89"/>
+
+    <edge id=":centro_0" function="internal">
+        <lane id=":centro_0_0" index="0" speed="6.51" length="9.03" shape="498.40,507.20 498.05,504.75 497.00,503.00 495.25,501.95 492.80,501.60"/>
+    </edge>
+    <edge id=":centro_1" function="internal">
+        <lane id=":centro_1_0" index="0" speed="13.89" length="14.40" shape="498.40,507.20 498.40,492.80"/>
+    </edge>
+    <edge id=":centro_2" function="internal">
+        <lane id=":centro_2_0" index="0" speed="8.00" length="14.19" shape="498.40,507.20 498.95,503.35 500.60,500.60 503.35,498.95 507.20,498.40"/>
+    </edge>
+    <edge id=":centro_3" function="internal">
+        <lane id=":centro_3_0" index="0" speed="6.51" length="9.03" shape="507.20,501.60 504.75,501.95 503.00,503.00 501.95,504.75 501.60,507.20"/>
+    </edge>
+    <edge id=":centro_4" function="internal">
+        <lane id=":centro_4_0" index="0" speed="11.11" length="14.40" shape="507.20,501.60 492.80,501.60"/>
+    </edge>
+    <edge id=":centro_5" function="internal">
+        <lane id=":centro_5_0" index="0" speed="8.00" length="14.19" shape="507.20,501.60 503.35,501.05 500.60,499.40 498.95,496.65 498.40,492.80"/>
+    </edge>
+    <edge id=":centro_6" function="internal">
+        <lane id=":centro_6_0" index="0" speed="6.51" length="9.03" shape="501.60,492.80 501.95,495.25 503.00,497.00 504.75,498.05 507.20,498.40"/>
+    </edge>
+    <edge id=":centro_7" function="internal">
+        <lane id=":centro_7_0" index="0" speed="13.89" length="14.40" shape="501.60,492.80 501.60,507.20"/>
+    </edge>
+    <edge id=":centro_8" function="internal">
+        <lane id=":centro_8_0" index="0" speed="8.00" length="14.19" shape="501.60,492.80 501.05,496.65 499.40,499.40 496.65,501.05 492.80,501.60"/>
+    </edge>
+    <edge id=":centro_9" function="internal">
+        <lane id=":centro_9_0" index="0" speed="6.51" length="9.03" shape="492.80,498.40 495.25,498.05 497.00,497.00 498.05,495.25 498.40,492.80"/>
+    </edge>
+    <edge id=":centro_10" function="internal">
+        <lane id=":centro_10_0" index="0" speed="11.11" length="14.40" shape="492.80,498.40 507.20,498.40"/>
+    </edge>
+    <edge id=":centro_11" function="internal">
+        <lane id=":centro_11_0" index="0" speed="8.00" length="14.19" shape="492.80,498.40 496.65,498.95 499.40,500.60 501.05,503.35 501.60,507.20"/>
+    </edge>
+
+    <edge id="c2e" from="centro" to="este" priority="1" type="residencial">
+        <lane id="c2e_0" index="0" speed="8.33" length="492.80" shape="507.20,498.40 1000.00,498.40"/>
+    </edge>
+    <edge id="c2n" from="centro" to="norte" priority="1" type="urbana">
+        <lane id="c2n_0" index="0" speed="13.89" length="492.80" shape="501.60,507.20 501.60,1000.00"/>
+    </edge>
+    <edge id="c2o" from="centro" to="oeste" priority="1" type="urbana">
+        <lane id="c2o_0" index="0" speed="13.89" length="492.80" shape="492.80,501.60 0.00,501.60"/>
+    </edge>
+    <edge id="c2s" from="centro" to="sur" priority="1" type="urbana">
+        <lane id="c2s_0" index="0" speed="13.89" length="492.80" shape="498.40,492.80 498.40,0.00"/>
+    </edge>
+    <edge id="e2c" from="este" to="centro" priority="1" type="residencial">
+        <lane id="e2c_0" index="0" speed="8.33" length="492.80" shape="1000.00,501.60 507.20,501.60"/>
+    </edge>
+    <edge id="n2c" from="norte" to="centro" priority="1" type="urbana">
+        <lane id="n2c_0" index="0" speed="13.89" length="492.80" shape="498.40,1000.00 498.40,507.20"/>
+    </edge>
+    <edge id="o2c" from="oeste" to="centro" priority="1" type="urbana">
+        <lane id="o2c_0" index="0" speed="13.89" length="492.80" shape="0.00,498.40 492.80,498.40"/>
+    </edge>
+    <edge id="s2c" from="sur" to="centro" priority="1" type="urbana">
+        <lane id="s2c_0" index="0" speed="13.89" length="492.80" shape="501.60,0.00 501.60,492.80"/>
+    </edge>
+
+    <junction id="centro" type="right_before_left" x="500.00" y="500.00" incLanes="n2c_0 e2c_0 s2c_0 o2c_0" intLanes=":centro_0_0 :centro_1_0 :centro_2_0 :centro_3_0 :centro_4_0 :centro_5_0 :centro_6_0 :centro_7_0 :centro_8_0 :centro_9_0 :centro_10_0 :centro_11_0" shape="496.80,507.20 503.20,507.20 503.64,504.98 504.20,504.20 504.98,503.64 505.98,503.31 507.20,503.20 507.20,496.80 504.98,496.36 504.20,495.80 503.64,495.02 503.31,494.02 503.20,492.80 496.80,492.80 496.36,495.02 495.80,495.80 495.02,496.36 494.02,496.69 492.80,496.80 492.80,503.20 495.02,503.64 495.80,504.20 496.36,504.98 496.69,505.98">
+        <request index="0"  response="000000000000" foes="000100010000" cont="0"/>
+        <request index="1"  response="111000000000" foes="111100110000" cont="0"/>
+        <request index="2"  response="110011000000" foes="110011110000" cont="0"/>
+        <request index="3"  response="000000000000" foes="100010000000" cont="0"/>
+        <request index="4"  response="000000000111" foes="100110000111" cont="0"/>
+        <request index="5"  response="011000000110" foes="011110000110" cont="0"/>
+        <request index="6"  response="000000000000" foes="010000000100" cont="0"/>
+        <request index="7"  response="000000111000" foes="110000111100" cont="0"/>
+        <request index="8"  response="000000110011" foes="110000110011" cont="0"/>
+        <request index="9"  response="000000000000" foes="000000100010" cont="0"/>
+        <request index="10" response="000111000000" foes="000111100110" cont="0"/>
+        <request index="11" response="000110011000" foes="000110011110" cont="0"/>
+    </junction>
+    <junction id="este" type="dead_end" x="1000.00" y="500.00" incLanes="c2e_0" intLanes="" shape="1000.00,500.00 1000.00,496.80 1000.00,500.00"/>
+    <junction id="norte" type="dead_end" x="500.00" y="1000.00" incLanes="c2n_0" intLanes="" shape="500.00,1000.00 503.20,1000.00 500.00,1000.00"/>
+    <junction id="oeste" type="dead_end" x="0.00" y="500.00" incLanes="c2o_0" intLanes="" shape="0.00,500.00 0.00,503.20 0.00,500.00"/>
+    <junction id="sur" type="dead_end" x="500.00" y="0.00" incLanes="c2s_0" intLanes="" shape="500.00,0.00 496.80,0.00 500.00,0.00"/>
+
+    <connection from="e2c" to="c2n" fromLane="0" toLane="0" via=":centro_3_0" dir="r" state="="/>
+    <connection from="e2c" to="c2o" fromLane="0" toLane="0" via=":centro_4_0" dir="s" state="="/>
+    <connection from="e2c" to="c2s" fromLane="0" toLane="0" via=":centro_5_0" dir="l" state="="/>
+    <connection from="n2c" to="c2o" fromLane="0" toLane="0" via=":centro_0_0" dir="r" state="="/>
+    <connection from="n2c" to="c2s" fromLane="0" toLane="0" via=":centro_1_0" dir="s" state="="/>
+    <connection from="n2c" to="c2e" fromLane="0" toLane="0" via=":centro_2_0" dir="l" state="="/>
+    <connection from="o2c" to="c2s" fromLane="0" toLane="0" via=":centro_9_0" dir="r" state="="/>
+    <connection from="o2c" to="c2e" fromLane="0" toLane="0" via=":centro_10_0" dir="s" state="="/>
+    <connection from="o2c" to="c2n" fromLane="0" toLane="0" via=":centro_11_0" dir="l" state="="/>
+    <connection from="s2c" to="c2e" fromLane="0" toLane="0" via=":centro_6_0" dir="r" state="="/>
+    <connection from="s2c" to="c2n" fromLane="0" toLane="0" via=":centro_7_0" dir="s" state="="/>
+    <connection from="s2c" to="c2o" fromLane="0" toLane="0" via=":centro_8_0" dir="l" state="="/>
+
+    <connection from=":centro_0" to="c2o" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":centro_1" to="c2s" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":centro_2" to="c2e" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":centro_3" to="c2n" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":centro_4" to="c2o" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":centro_5" to="c2s" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":centro_6" to="c2e" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":centro_7" to="c2n" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":centro_8" to="c2o" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":centro_9" to="c2s" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":centro_10" to="c2e" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":centro_11" to="c2n" fromLane="0" toLane="0" dir="l" state="M"/>
+
+</net>
