@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?><routes>
+    <vType id="moto" accel="5.0" decel="1.5" maxSpeed="60" sigma="0.5" length="2.0" minGap="0.5" guiShape="motorcycle" width=".25"/>
+    <vType id="sedan" accel="3.0" decel="4.5" maxSpeed="50" sigma="0.25" length="5.0" minGap="2.5" guiShape="passenger/sedan"/>
+    <vType id="wagon" accel="2.5" decel="4.5" maxSpeed="50" sigma="0.15" length="5.0" minGap="2.5" guiShape="passenger/wagon"/>
+    <vType id="trailer" accel="0.5" decel="7.5" maxSpeed="25" sigma="0.10" length="16.25" minGap="2.5" guiShape="truck/trailer" width="2.6"/>
+    
+    <interval begin="0" end="3600">
+    	<!-- Tráfico desde el norte -->
+    	<!-- hacia el este -->
+	<flow id="0" from="n2c" to="c2e" type="sedan" number="135"/>
+        <flow id="1" from="n2c" to="c2e" type="wagon" number="120"/>
+        <flow id="2" from="n2c" to="c2e" type="moto" number="37"/>
+        <!-- hacia el sur -->
+        <flow id="4" from="n2c" to="c2s" type="sedan" number="15"/>
+        <flow id="5" from="n2c" to="c2s" type="wagon" number="15"/>
+        <flow id="6" from="n2c" to="c2s" type="moto" number="7"/>
+        <!-- hacia el oeste -->
+        <flow id="8" from="n2c" to="c2o" type="sedan" number="15"/>
+        <flow id="9" from="n2c" to="c2o" type="wagon" number="7"/>
+        <flow id="10" from="n2c" to="c2o" type="moto" number="7"/>
+        
+        
+        
+        
+        <!-- Tráfico desde el este -->
+        <!-- hacia el sur -->
+        <flow id="12" from="e2c" to="c2s" type="sedan" number="75"/>
+        <flow id="13" from="e2c" to="c2s" type="wagon" number="112"/>
+        <flow id="14" from="e2c" to="c2s" type="moto" number="15"/>
+        <!-- hacia el oeste -->
+        <flow id="16" from="e2c" to="c2o" type="sedan" number="7"/>
+        <flow id="17" from="e2c" to="c2o" type="wagon" number="7"/>
+        <flow id="18" from="e2c" to="c2o" type="moto" number="3"/>
+        <!-- hacia el norte -->
+        <flow id="20" from="e2c" to="c2n" type="sedan" number="22"/>
+        <flow id="21" from="e2c" to="c2n" type="wagon" number="22"/>
+        <flow id="22" from="e2c" to="c2n" type="moto" number="7"/>
+        
+        <!-- Tráfico desde el sur -->
+        <!-- hacia el oeste -->
+        <flow id="24" from="s2c" to="c2o" type="sedan" number="60"/>
+        <flow id="25" from="s2c" to="c2o" type="wagon" number="50"/>
+        <flow id="26" from="s2c" to="c2o" type="moto" number="20"/>
+        <!-- hacia el norte -->
+        <flow id="28" from="s2c" to="c2n" type="sedan" number="30"/>
+        <flow id="29" from="s2c" to="c2n" type="wagon" number="40"/>
+        <flow id="30" from="s2c" to="c2n" type="moto" number="10"/>
+        <!-- hacia el este -->
+        <flow id="32" from="s2c" to="c2e" type="sedan" number="500"/>
+        <flow id="33" from="s2c" to="c2e" type="wagon" number="600"/>
+        <flow id="34" from="s2c" to="c2e" type="moto" number="100"/>
+   
+        <!-- Tráfico desde el oeste -->      
+        <!-- hacia el norte --> 
+        <flow id="36" from="o2c" to="c2n" type="sedan" number="82"/>
+        <flow id="37" from="o2c" to="c2n" type="wagon" number="67"/>
+        <flow id="38" from="o2c" to="c2n" type="moto" number="7"/>
+        <!-- hacia el este -->
+        <flow id="40" from="o2c" to="c2e" type="sedan" number="135"/>
+        <flow id="41" from="o2c" to="c2e" type="wagon" number="127"/>
+        <flow id="42" from="o2c" to="c2e" type="moto" number="22"/>
+        <!-- hacia el sur -->
+        <flow id="44" from="o2c" to="c2s" type="sedan" number="52"/>
+        <flow id="45" from="o2c" to="c2s" type="wagon" number="82"/>
+        <flow id="46" from="o2c" to="c2s" type="moto" number="15"/>
+       
+    </interval>
+</routes>

@@ -1,0 +1,17 @@
+<connections>
+    <connection from="n2c" to="c2e" fromLane="0" toLane="0"/>
+    <connection from="n2c" to="c2s" fromLane="0" toLane="0"/>
+    <connection from="n2c" to="c2o" fromLane="0" toLane="0"/>
+        
+    <connection from="e2c" to="c2s" fromLane="0" toLane="0"/>
+    <connection from="e2c" to="c2o" fromLane="0" toLane="0"/>
+    <connection from="e2c" to="c2n" fromLane="0" toLane="0"/>
+    
+    <connection from="s2c" to="c2o" fromLane="0" toLane="0"/>
+    <connection from="s2c" to="c2n" fromLane="0" toLane="0"/>
+    <connection from="s2c" to="c2e" fromLane="0" toLane="0"/>
+    
+    <connection from="o2c" to="c2n" fromLane="0" toLane="0"/>    
+    <connection from="o2c" to="c2e" fromLane="0" toLane="0"/>
+    <connection from="o2c" to="c2s" fromLane="0" toLane="0"/>
+</connections>

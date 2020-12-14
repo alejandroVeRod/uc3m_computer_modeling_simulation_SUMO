@@ -1,0 +1,4 @@
+<types>
+   <type id="urbana"      priority="1" numLanes="1" speed="13.889"/>
+   <type id="residencial" priority="1" numLanes="1" speed="8.333"/>
+</types>

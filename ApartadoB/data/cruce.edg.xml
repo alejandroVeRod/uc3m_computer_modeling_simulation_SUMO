@@ -1,0 +1,10 @@
+<edges>
+    <edge id="o2c" from="oeste"  to="centro" type="urbana"/>
+    <edge id="c2o" from="centro" to="oeste"  type="urbana" />
+    <edge id="e2c" from="este"   to="centro" type="residencial"/>
+    <edge id="c2e" from="centro" to="este"   type="residencial"/>
+    <edge id="n2c" from="norte"  to="centro" type="urbana"/>
+    <edge id="c2n" from="centro" to="norte"  type="urbana"/>
+    <edge id="s2c" from="sur"    to="centro" type="urbana"/>
+    <edge id="c2s" from="centro" to="sur"    type="urbana"/>
+</edges>

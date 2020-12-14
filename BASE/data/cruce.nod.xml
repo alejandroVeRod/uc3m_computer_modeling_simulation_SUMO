@@ -1,0 +1,7 @@
+<nodes>
+    <node id="centro" x="0.0"    y="0.0" type="right_before_left"/>
+    <node id="oeste"  x="-500.0" y="0.0" />
+    <node id="este"   x="+500.0" y="0.0" />
+    <node id="norte"  x="0.0"    y="+500.0" />
+    <node id="sur"    x="0.0"    y="-500.0" />
+</nodes>
