@@ -1,12 +1,14 @@
+#utilies
+#install.packages('XML')
+library('XML')
 
 read_sumo_output <- function(path){
-  files <- list.files(path)
+  print('Leyendo archivos base ......')
   docs <- list()
-  for (i in 1:length(files)){
-    file_path = paste(path,i,".output.xml",sep="")
-    print(file_path)
-    doc = xmlTreeParse(file_path, useInternal=TRUE)
-    docs <- append(docs, values = doc)
+  
+  file_path <- paste(path, 1:30,".output.xml",sep="")
+  for (i in 1:length(file_path)) {
+    docs <- append(docs, values = xmlTreeParse(file_path[[i]], useInternal = T))
   }
   return(docs)
 }
@@ -14,8 +16,7 @@ read_sumo_output <- function(path){
 get_mean_duration <- function(docs){
   duration_means <- list()
   for (i in 1:length(docs)){
-    doc <- docs[[i]]
-    top = xmlRoot(doc)
+    top = xmlRoot(docs[[i]])
     duration = as.numeric(xmlSApply(top,xmlGetAttr,"duration")) 
     duration_means <- append(duration_means, values = mean(duration))
   }
